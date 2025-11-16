@@ -1,0 +1,333 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram id="wireframe1" name="Wireframe">
+    <mxGraphModel dx="1722" dy="1002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="GESTÃO DO ANIMALEC" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="275" y="30" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="u" value="Utilizadores" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="275" y="110" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a" value="Animais" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="435" y="110" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qz" value="Quizzes" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="275" y="210" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qs" value="Questões" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="435" y="210" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sp" value="Sponsors" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="275" y="310" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ex" value="Experts" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="435" y="310" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-102" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="80" y="490" width="720" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-2" value="+ Adicionar Sponsor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-102">
+          <mxGeometry y="50" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-3" value="Menu Principal" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-102">
+          <mxGeometry x="140" y="50" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-81" value="GESTÃO DE SPONSORS" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-102">
+          <mxGeometry x="290" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-61" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;swimlaneLine=1;strokeWidth=1.1810999999999998;swimlaneFillColor=default;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-102">
+          <mxGeometry y="80" width="720" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-62" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-61">
+          <mxGeometry width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-74" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;NOME&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-62">
+          <mxGeometry width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-63" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;TIPO&amp;nbsp;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-62">
+          <mxGeometry x="128" width="127" height="30" as="geometry">
+            <mxRectangle width="127" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-64" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;DATA CRIAÇÃO&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-62">
+          <mxGeometry x="255" width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-65" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;AÇÕES&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-62">
+          <mxGeometry x="383" width="337" height="30" as="geometry">
+            <mxRectangle width="337" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-66" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-61">
+          <mxGeometry y="30" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-75" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Bolachas BéuBéu&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-66">
+          <mxGeometry width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-67" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Sponsor&amp;nbsp;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-66">
+          <mxGeometry x="128" width="127" height="30" as="geometry">
+            <mxRectangle width="127" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-68" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;2025-11-16&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-66">
+          <mxGeometry x="255" width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-69" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%2B%20Adicionar%20Sponsor%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2250%22%20y%3D%22600%22%20width%3D%22130%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-66">
+          <mxGeometry x="383" width="337" height="30" as="geometry">
+            <mxRectangle width="337" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-77" value="Editar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-102">
+          <mxGeometry x="400" y="115" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-78" value="Ver" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-102">
+          <mxGeometry x="480" y="115" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-79" value="Remover" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-102">
+          <mxGeometry x="560" y="116" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-103" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="80" y="660" width="720" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-104" value="+ Adicionar Expert" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-103">
+          <mxGeometry y="50" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-105" value="Menu Principal" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-103">
+          <mxGeometry x="140" y="50" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-106" value="GESTÃO DE EXPERTS" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-103">
+          <mxGeometry x="290" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-107" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=16;swimlaneLine=1;strokeWidth=1.1810999999999998;swimlaneFillColor=default;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-103">
+          <mxGeometry y="80" width="720" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-108" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-107">
+          <mxGeometry width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-109" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;NOME&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-108">
+          <mxGeometry width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-110" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;TIPO&amp;nbsp;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-108">
+          <mxGeometry x="128" width="127" height="30" as="geometry">
+            <mxRectangle width="127" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-111" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;DATA CRIAÇÃO&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-108">
+          <mxGeometry x="255" width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-112" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;AÇÕES&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=#d6b656;overflow=hidden;fillColor=#fff2cc;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;align=center;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-108">
+          <mxGeometry x="383" width="337" height="30" as="geometry">
+            <mxRectangle width="337" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-113" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-107">
+          <mxGeometry y="30" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-114" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;João&amp;nbsp;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-113">
+          <mxGeometry width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-115" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;Expert&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-113">
+          <mxGeometry x="128" width="127" height="30" as="geometry">
+            <mxRectangle width="127" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-116" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;2025-11-16&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-113">
+          <mxGeometry x="255" width="128" height="30" as="geometry">
+            <mxRectangle width="128" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-117" value="&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%2B%20Adicionar%20Sponsor%22%20style%3D%22rounded%3D1%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%2250%22%20y%3D%22600%22%20width%3D%22130%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=16;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-113">
+          <mxGeometry x="383" width="337" height="30" as="geometry">
+            <mxRectangle width="337" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-118" value="Editar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-103">
+          <mxGeometry x="400" y="115" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-119" value="Ver" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-103">
+          <mxGeometry x="480" y="115" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-120" value="Remover" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-103">
+          <mxGeometry x="560" y="116" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-131" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="175" y="900" width="500" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-129" value="ADICIONAR SPONSOR" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-131">
+          <mxGeometry x="170" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-130" value="" style="group" vertex="1" connectable="0" parent="EznxakVSpSlJQLgIQuLe-131">
+          <mxGeometry y="60" width="500" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-122" value="&amp;nbsp; escreve nome" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-130">
+          <mxGeometry width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-123" value="&amp;nbsp; escreve data de nascimento" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-130">
+          <mxGeometry y="40" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-124" value="&amp;nbsp; escreve cidade" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-130">
+          <mxGeometry y="80" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-125" value="&amp;nbsp; escreve país" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-130">
+          <mxGeometry y="120" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-126" value="&amp;nbsp; escreve descrição/observações" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-130">
+          <mxGeometry y="160" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-127" value="+ ADICIONAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-130">
+          <mxGeometry y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-128" value="x CANCELAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-130">
+          <mxGeometry x="110" y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-132" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="175" y="1310" width="500" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-133" value="ADICIONAR EXPERT" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-132">
+          <mxGeometry x="170" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-134" value="" style="group" vertex="1" connectable="0" parent="EznxakVSpSlJQLgIQuLe-132">
+          <mxGeometry y="60" width="500" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-135" value="&amp;nbsp; escreve nome" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-134">
+          <mxGeometry width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-136" value="&amp;nbsp; escreve data de nascimento" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-134">
+          <mxGeometry y="40" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-137" value="&amp;nbsp; escreve cidade" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-134">
+          <mxGeometry y="80" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-138" value="&amp;nbsp; escreve país" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-134">
+          <mxGeometry y="120" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-139" value="&amp;nbsp; escreve descrição/observações" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-134">
+          <mxGeometry y="160" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-140" value="+ ADICIONAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-134">
+          <mxGeometry y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-141" value="x CANCELAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-134">
+          <mxGeometry x="110" y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-142" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="175" y="1730" width="500" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-143" value="EDITAR SPONSOR" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-142">
+          <mxGeometry x="170" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-144" value="" style="group" vertex="1" connectable="0" parent="EznxakVSpSlJQLgIQuLe-142">
+          <mxGeometry y="60" width="500" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-145" value="&amp;nbsp;Bolachas BéuBéu" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-144">
+          <mxGeometry width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-146" value="&lt;span style=&quot;text-align: center;&quot;&gt;&amp;nbsp; 2025-11-16&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-144">
+          <mxGeometry y="40" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-147" value="&amp;nbsp; Coimbra" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-144">
+          <mxGeometry y="80" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-148" value="&amp;nbsp; Portugal" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-144">
+          <mxGeometry y="120" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-149" value="&amp;nbsp; Oferece bolachas para cães" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-144">
+          <mxGeometry y="160" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-150" value="+ ADICIONAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-144">
+          <mxGeometry y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-151" value="x CANCELAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-144">
+          <mxGeometry x="110" y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-152" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="175" y="2140" width="500" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-153" value="EDITAR EXPERT" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-152">
+          <mxGeometry x="170" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-154" value="" style="group" vertex="1" connectable="0" parent="EznxakVSpSlJQLgIQuLe-152">
+          <mxGeometry y="60" width="500" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-155" value="&amp;nbsp; João" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-154">
+          <mxGeometry width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-156" value="&lt;span style=&quot;text-align: center;&quot;&gt;&amp;nbsp; 2025-11-16&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-154">
+          <mxGeometry y="40" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-157" value="&amp;nbsp; Coimbra" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-154">
+          <mxGeometry y="80" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-158" value="&amp;nbsp; Portugal" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-154">
+          <mxGeometry y="120" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-159" value="&amp;nbsp; veterinário" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-154">
+          <mxGeometry y="160" width="500" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-160" value="+ ADICIONAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-154">
+          <mxGeometry y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-161" value="x CANCELAR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-154">
+          <mxGeometry x="110" y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-176" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="265" y="2570" width="320" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-174" value="" style="group" vertex="1" connectable="0" parent="EznxakVSpSlJQLgIQuLe-176">
+          <mxGeometry y="30" width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-169" value="" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-174">
+          <mxGeometry width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-163" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Bolachas béubéu&lt;/font&gt;&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-174">
+          <mxGeometry x="65" y="20" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-170" value="OK" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-174">
+          <mxGeometry x="120" y="200" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-173" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Nome:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Bolachas béubéu&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Tipo de utilizador:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Sponsor&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Observações:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Oferece bolachas para cães&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Data de nascimento:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;2025-11-16&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Cidade:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Coimbra&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;País:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Portugal&lt;/span&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-174">
+          <mxGeometry x="10" y="60" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-175" value="VER SPONSOR" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-176">
+          <mxGeometry x="88" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-177" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="265" y="2900" width="320" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-178" value="" style="group" vertex="1" connectable="0" parent="EznxakVSpSlJQLgIQuLe-177">
+          <mxGeometry y="30" width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-179" value="" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-178">
+          <mxGeometry width="320" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-180" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;João&lt;/font&gt;&lt;/b&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-178">
+          <mxGeometry x="65" y="20" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-181" value="OK" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-178">
+          <mxGeometry x="120" y="200" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-182" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Nome:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;João&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Tipo de utilizador:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Expert&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Observações:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Veterinário&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Data de nascimento:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;2025-11-16&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;Cidade:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Coimbra&lt;/span&gt;&lt;br style=&quot;box-sizing: border-box; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&lt;span style=&quot;box-sizing: border-box; font-weight: bolder; color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;País:&lt;/span&gt;&lt;span style=&quot;color: rgb(84, 84, 84); font-family: Lato, -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, Arial, &amp;quot;Noto Sans&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp;Portugal&lt;/span&gt;&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-178">
+          <mxGeometry x="10" y="60" width="300" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EznxakVSpSlJQLgIQuLe-183" value="VER EXPERT" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="EznxakVSpSlJQLgIQuLe-177">
+          <mxGeometry x="88" width="145" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,2 +1,4 @@
 # Tarefa_3.1b
-Projeto Animalec
+Projeto Animalec - Área de Gestão
+Sponsors
+Experts
