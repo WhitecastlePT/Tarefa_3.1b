@@ -1,0 +1,390 @@
+/* Estilos para o Protótipo Gestão Animalec */
+
+:root {
+  --azul: #007bff;
+  --indigo: #6610f2;
+  --roxo: #6f42c1;
+  --rosa: #e83e8c;
+  --vermelho: #dc3545;
+  --laranja: #fd7e14;
+  --amarelo: #ffc107;
+  --verde: #28a745;
+  --azul-claro: #1abc9c;
+  --ciano: #17a2b8;
+  --branco: #fff;
+  --cinza: #6c757d;
+  --cinza-escuro: #343a40;
+  --primario: #1abc9c;
+  --secundario: #2c3e50;
+  --sucesso: #28a745;
+  --informacao: #17a2b8;
+  --alerta: #ffc107;
+  --perigo: #dc3545;
+  --claro: #f8f9fa;
+  --escuro: #343a40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+}
+
+.secao-pagina {
+  padding: 2rem 0;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Componente: Cabeçalho de Página */
+.cabecalho-pagina {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.cabecalho-pagina h1 {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--secundario);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Componente: Caixa de Opção Admin */
+.caixa-opcao-admin-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-opcao-admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Painéis Desativados */
+.painel-desativado .caixa-opcao-admin-card {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.painel-desativado .caixa-opcao-admin-card:hover {
+  transform: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-opcao-admin-card .card-header {
+  background-color: var(--secundario);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.caixa-opcao-admin-card .card-body {
+  padding: 3rem 1rem;
+  background-color: var(--secundario);
+}
+
+.caixa-opcao-admin-card i {
+  color: var(--branco);
+  display: block;
+}
+
+/* Tabelas */
+.table {
+  background-color: var(--branco);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: var(--cinza-escuro);
+  color: var(--branco);
+}
+
+.table thead th {
+  border: none;
+  padding: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.table thead th i {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.table thead th i:hover {
+  transform: scale(1.2);
+}
+
+.table tbody td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Formulários */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: var(--branco);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: var(--primario);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+}
+
+.form-control-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+.btn-outline-success {
+  color: var(--sucesso);
+  border-color: var(--sucesso);
+  background-color: transparent;
+}
+
+.btn-outline-success:hover {
+  color: var(--branco);
+  background-color: var(--sucesso);
+  border-color: var(--sucesso);
+}
+
+.btn-outline-danger {
+  color: var(--perigo);
+  border-color: var(--perigo);
+  background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+  color: var(--branco);
+  background-color: var(--perigo);
+  border-color: var(--perigo);
+}
+
+.btn-outline-info {
+  color: var(--informacao);
+  border-color: var(--informacao);
+  background-color: transparent;
+}
+
+.btn-outline-info:hover {
+  color: var(--branco);
+  background-color: var(--informacao);
+  border-color: var(--informacao);
+}
+
+/* Utilitários */
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.pt-4 {
+  padding-top: 1.5rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.secao-pagina > div > div {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Modal */
+.modal-header {
+  background-color: var(--primario);
+  color: var(--branco);
+}
+
+.modal-header .close {
+  color: var(--branco);
+  opacity: 1;
+}
+
+.modal-header .close:hover {
+  color: var(--branco);
+  opacity: 0.8;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Alertas */
+.alert {
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.alert h4 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+  color: #0c5460;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .caixa-opcao-admin-card {
+    margin-bottom: 1rem;
+  }
+
+  .table {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .cabecalho-pagina h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Alertas personalizados (para simular SweetAlert2) */
+.alerta-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--branco);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.alerta-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.alerta-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--secundario);
+}
+
+.alerta-conteudo {
+  margin-bottom: 1.5rem;
+  color: var(--cinza-escuro);
+}
+
+.alerta-botoes {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

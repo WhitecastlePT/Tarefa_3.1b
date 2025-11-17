@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo - Gestão Animalec</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Componente Principal -->
+        <section class="secao-pagina">
+            <div class="container-fluid">
+                <!-- Vista: Gestão Animalec -->
+                <div v-if="vistaAtual === 'gestao'">
+                    <cabecalho-pagina titulo="Gestão do Animalec"></cabecalho-pagina>
+
+                    <div class="row">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <div class="card-group deck">
+                                <caixa-opcao-admin
+                                    icone="users"
+                                    titulo="Utilizadores"
+                                    class="painel-desativado">
+                                </caixa-opcao-admin>
+
+                                <caixa-opcao-admin
+                                    icone="dog"
+                                    titulo="Animais"
+                                    class="painel-desativado">
+                                </caixa-opcao-admin>
+                            </div>
+
+                            <div class="card-group deck mt-3">
+                                <caixa-opcao-admin
+                                    icone="file-alt"
+                                    titulo="Quizzes"
+                                    class="painel-desativado">
+                                </caixa-opcao-admin>
+
+                                <caixa-opcao-admin
+                                    icone="question-circle"
+                                    titulo="Questões"
+                                    class="painel-desativado">
+                                </caixa-opcao-admin>
+                            </div>
+
+                            <div class="card-group deck mt-3">
+                                <caixa-opcao-admin
+                                    icone="users"
+                                    titulo="Sponsors"
+                                    @click.native="navegarPara('listaSponsors')">
+                                </caixa-opcao-admin>
+
+                                <caixa-opcao-admin
+                                    icone="users"
+                                    titulo="Experts"
+                                    @click.native="navegarPara('listaExperts')">
+                                </caixa-opcao-admin>
+                            </div>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+
+                <!-- Vista: Lista de Sponsors -->
+                <div v-if="vistaAtual === 'listaSponsors'">
+                    <cabecalho-pagina titulo="Gestão de Sponsors"></cabecalho-pagina>
+
+                    <div class="row mb-4">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <button @click="navegarPara('adicionarSponsor')" class="btn btn-outline-success mr-2 mt-2">
+                                <i class="fas fa-plus-square"></i> ADICIONAR SPONSOR
+                            </button>
+                            <button @click="navegarPara('gestao')" class="btn btn-outline-info mr-2 mt-2">
+                                <i class="fas fa-bars"></i> MENU PRINCIPAL
+                            </button>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">
+                                            NOME
+                                            <i class="fas fa-arrow-up" v-if="tipoOrdenacao === 1" @click="ordenar('sponsors')"></i>
+                                            <i class="fas fa-arrow-down" v-else @click="ordenar('sponsors')"></i>
+                                        </th>
+                                        <th scope="col">TIPO</th>
+                                        <th scope="col">DATA DE CRIAÇÃO</th>
+                                        <th scope="col">AÇÕES</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="sponsor in listaSponsorsOrdenada" :key="sponsor.id">
+                                        <td class="pt-4">{{ sponsor.nome }}</td>
+                                        <td class="pt-4">{{ sponsor.tipo }}</td>
+                                        <td class="pt-4">{{ formatarData(sponsor.dataCriacao) }}</td>
+                                        <td>
+                                            <button @click="editarSponsor(sponsor)" class="btn btn-outline-success mr-2">
+                                                <i class="fas fa-edit"></i> EDITAR
+                                            </button>
+                                            <button @click="verDetalhes(sponsor)" class="btn btn-outline-success mr-2">
+                                                <i class="fas fa-search"></i> VER
+                                            </button>
+                                            <button @click="removerSponsor(sponsor.id)" class="btn btn-outline-danger mr-2">
+                                                <i class="fas fa-trash-alt"></i> REMOVER
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+
+                <!-- Vista: Lista de Experts -->
+                <div v-if="vistaAtual === 'listaExperts'">
+                    <cabecalho-pagina titulo="Gestão de Experts"></cabecalho-pagina>
+
+                    <div class="row mb-4">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <button @click="navegarPara('adicionarExpert')" class="btn btn-outline-success mr-2 mt-2">
+                                <i class="fas fa-plus-square"></i> ADICIONAR EXPERT
+                            </button>
+                            <button @click="navegarPara('gestao')" class="btn btn-outline-info mr-2 mt-2">
+                                <i class="fas fa-bars"></i> MENU PRINCIPAL
+                            </button>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <table class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">
+                                            NOME
+                                            <i class="fas fa-arrow-up" v-if="tipoOrdenacao === 1" @click="ordenar('experts')"></i>
+                                            <i class="fas fa-arrow-down" v-else @click="ordenar('experts')"></i>
+                                        </th>
+                                        <th scope="col">TIPO</th>
+                                        <th scope="col">DATA DE CRIAÇÃO</th>
+                                        <th scope="col">AÇÕES</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="expert in listaExpertsOrdenada" :key="expert.id">
+                                        <td class="pt-4">{{ expert.nome }}</td>
+                                        <td class="pt-4">{{ expert.tipo }}</td>
+                                        <td class="pt-4">{{ formatarData(expert.dataCriacao) }}</td>
+                                        <td>
+                                            <button @click="editarExpert(expert)" class="btn btn-outline-success mr-2">
+                                                <i class="fas fa-edit"></i> EDITAR
+                                            </button>
+                                            <button @click="verDetalhes(expert)" class="btn btn-outline-success mr-2">
+                                                <i class="fas fa-search"></i> VER
+                                            </button>
+                                            <button @click="removerExpert(expert.id)" class="btn btn-outline-danger mr-2">
+                                                <i class="fas fa-trash-alt"></i> REMOVER
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+
+                <!-- Vista: Adicionar Sponsor -->
+                <div v-if="vistaAtual === 'adicionarSponsor'">
+                    <cabecalho-pagina titulo="Adicionar Sponsor"></cabecalho-pagina>
+
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <form @submit.prevent="submeterFormularioSponsor">
+                                <div class="form-group">
+                                    <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve nome" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.dataNascimento" type="date" class="form-control form-control-lg"
+                                           placeholder="escreve data de nascimento" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.cidade" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve cidade" />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.pais" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve país" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea v-model="formulario.descricao" class="form-control form-control-lg"
+                                              placeholder="escreve descrição/observações" rows="5"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-success btn-lg mr-2">
+                                    <i class="fas fa-plus-square"></i> ADICIONAR
+                                </button>
+                                <button @click="navegarPara('listaSponsors')" type="button" class="btn btn-outline-danger btn-lg">
+                                    <i class="fas fa-window-close"></i> CANCELAR
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <!-- Vista: Adicionar Expert -->
+                <div v-if="vistaAtual === 'adicionarExpert'">
+                    <cabecalho-pagina titulo="Adicionar Expert"></cabecalho-pagina>
+
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <form @submit.prevent="submeterFormularioExpert">
+                                <div class="form-group">
+                                    <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve nome" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.dataNascimento" type="date" class="form-control form-control-lg"
+                                           placeholder="escreve data de nascimento" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.cidade" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve cidade" />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.pais" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve país" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea v-model="formulario.descricao" class="form-control form-control-lg"
+                                              placeholder="escreve descrição/observações" rows="5"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-success btn-lg mr-2">
+                                    <i class="fas fa-plus-square"></i> ADICIONAR
+                                </button>
+                                <button @click="navegarPara('listaExperts')" type="button" class="btn btn-outline-danger btn-lg">
+                                    <i class="fas fa-window-close"></i> CANCELAR
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <!-- Vista: Editar Sponsor -->
+                <div v-if="vistaAtual === 'editarSponsor'">
+                    <cabecalho-pagina titulo="Editar Sponsor"></cabecalho-pagina>
+
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <form @submit.prevent="atualizarSponsor">
+                                <div class="form-group">
+                                    <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve nome" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.dataNascimento" type="date" class="form-control form-control-lg"
+                                           placeholder="escreve data de nascimento" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.cidade" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve cidade" />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.pais" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve país" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea v-model="formulario.descricao" class="form-control form-control-lg"
+                                              placeholder="escreve descrição/observações" rows="5"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-success btn-lg mr-2">
+                                    <i class="fas fa-edit"></i> ATUALIZAR
+                                </button>
+                                <button @click="navegarPara('listaSponsors')" type="button" class="btn btn-outline-danger btn-lg">
+                                    <i class="fas fa-window-close"></i> CANCELAR
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+                <!-- Vista: Editar Expert -->
+                <div v-if="vistaAtual === 'editarExpert'">
+                    <cabecalho-pagina titulo="Editar Expert"></cabecalho-pagina>
+
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            <form @submit.prevent="atualizarExpert">
+                                <div class="form-group">
+                                    <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve nome" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.dataNascimento" type="date" class="form-control form-control-lg"
+                                           placeholder="escreve data de nascimento" required />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.cidade" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve cidade" />
+                                </div>
+                                <div class="form-group">
+                                    <input v-model="formulario.pais" type="text" class="form-control form-control-lg"
+                                           placeholder="escreve país" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea v-model="formulario.descricao" class="form-control form-control-lg"
+                                              placeholder="escreve descrição/observações" rows="5"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-outline-success btn-lg mr-2">
+                                    <i class="fas fa-edit"></i> ATUALIZAR
+                                </button>
+                                <button @click="navegarPara('listaExperts')" type="button" class="btn btn-outline-danger btn-lg">
+                                    <i class="fas fa-window-close"></i> CANCELAR
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal para Ver Detalhes -->
+        <div class="modal fade" id="modalDetalhes" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">{{ modalTitulo }}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div v-html="modalConteudo"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (para Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <!-- JavaScript -->
+    <script src="aplicacao.js"></script>
+</body>
+</html>
