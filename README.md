@@ -10,4 +10,4 @@ Wireframe - Draw.io ( tem de ser importado )
 Mockup e prototipo - Figma ( ficheiro .fig)
 Prototipo funcional - pasta ( prototipo-gestao-animalec )
 
-Os wireframes, mockups, e prototipos seguem o layout original do projecto no qual for realizado download na página da FCA.
+Os wireframes, mockups, e prototipos seguem o layout original do projecto animalec exposto no Livro recomendado, no qual for realizado download na página da FCA.
