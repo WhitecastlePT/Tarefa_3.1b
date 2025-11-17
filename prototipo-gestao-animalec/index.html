@@ -24,9 +24,9 @@
                     <cabecalho-pagina titulo="Gestão do Animalec"></cabecalho-pagina>
 
                     <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4">
-                            <div class="card-group deck">
+                        <div class="col-12 col-md-4"></div>
+                        <div class="col-12 col-md-4">
+                            <div class="card-deck">
                                 <caixa-opcao-admin
                                     icone="users"
                                     titulo="Utilizadores"
@@ -40,7 +40,7 @@
                                 </caixa-opcao-admin>
                             </div>
 
-                            <div class="card-group deck mt-3">
+                            <div class="card-deck mt-3">
                                 <caixa-opcao-admin
                                     icone="file-alt"
                                     titulo="Quizzes"
@@ -54,7 +54,7 @@
                                 </caixa-opcao-admin>
                             </div>
 
-                            <div class="card-group deck mt-3">
+                            <div class="card-deck mt-3">
                                 <caixa-opcao-admin
                                     icone="users"
                                     titulo="Sponsors"
@@ -68,7 +68,7 @@
                                 </caixa-opcao-admin>
                             </div>
                         </div>
-                        <div class="col-4"></div>
+                        <div class="col-12 col-md-4"></div>
                     </div>
                 </div>
 
@@ -77,8 +77,8 @@
                     <cabecalho-pagina titulo="Gestão de Sponsors"></cabecalho-pagina>
 
                     <div class="row mb-4">
-                        <div class="col-1"></div>
-                        <div class="col">
+                        <div class="col-12 col-lg-1"></div>
+                        <div class="col-12 col-lg-10">
                             <button @click="navegarPara('adicionarSponsor')" class="btn btn-outline-success mr-2 mt-2">
                                 <i class="fas fa-plus-square"></i> ADICIONAR SPONSOR
                             </button>
@@ -86,12 +86,13 @@
                                 <i class="fas fa-bars"></i> MENU PRINCIPAL
                             </button>
                         </div>
-                        <div class="col-1"></div>
+                        <div class="col-12 col-lg-1"></div>
                     </div>
 
                     <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col">
+                        <div class="col-12 col-lg-1"></div>
+                        <div class="col-12 col-lg-10">
+                            <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead class="thead-dark">
                                     <tr>
@@ -124,8 +125,9 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            </div>
                         </div>
-                        <div class="col-1"></div>
+                        <div class="col-12 col-lg-1"></div>
                     </div>
                 </div>
 
@@ -134,8 +136,8 @@
                     <cabecalho-pagina titulo="Gestão de Experts"></cabecalho-pagina>
 
                     <div class="row mb-4">
-                        <div class="col-1"></div>
-                        <div class="col">
+                        <div class="col-12 col-lg-1"></div>
+                        <div class="col-12 col-lg-10">
                             <button @click="navegarPara('adicionarExpert')" class="btn btn-outline-success mr-2 mt-2">
                                 <i class="fas fa-plus-square"></i> ADICIONAR EXPERT
                             </button>
@@ -143,12 +145,13 @@
                                 <i class="fas fa-bars"></i> MENU PRINCIPAL
                             </button>
                         </div>
-                        <div class="col-1"></div>
+                        <div class="col-12 col-lg-1"></div>
                     </div>
 
                     <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col">
+                        <div class="col-12 col-lg-1"></div>
+                        <div class="col-12 col-lg-10">
+                            <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead class="thead-dark">
                                     <tr>
@@ -181,8 +184,9 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            </div>
                         </div>
-                        <div class="col-1"></div>
+                        <div class="col-12 col-lg-1"></div>
                     </div>
                 </div>
 
@@ -191,8 +195,8 @@
                     <cabecalho-pagina titulo="Adicionar Sponsor"></cabecalho-pagina>
 
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-2 col-lg-3"></div>
+                        <div class="col-12 col-md-8 col-lg-6">
                             <form @submit.prevent="submeterFormularioSponsor">
                                 <div class="form-group">
                                     <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
@@ -223,7 +227,7 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="col-2"></div>
+                        <div class="col-12 col-md-2 col-lg-3"></div>
                     </div>
                 </div>
 
@@ -232,8 +236,8 @@
                     <cabecalho-pagina titulo="Adicionar Expert"></cabecalho-pagina>
 
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-2 col-lg-3"></div>
+                        <div class="col-12 col-md-8 col-lg-6">
                             <form @submit.prevent="submeterFormularioExpert">
                                 <div class="form-group">
                                     <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
@@ -264,7 +268,7 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="col-2"></div>
+                        <div class="col-12 col-md-2 col-lg-3"></div>
                     </div>
                 </div>
 
@@ -273,8 +277,8 @@
                     <cabecalho-pagina titulo="Editar Sponsor"></cabecalho-pagina>
 
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-2 col-lg-3"></div>
+                        <div class="col-12 col-md-8 col-lg-6">
                             <form @submit.prevent="atualizarSponsor">
                                 <div class="form-group">
                                     <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
@@ -305,7 +309,7 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="col-2"></div>
+                        <div class="col-12 col-md-2 col-lg-3"></div>
                     </div>
                 </div>
 
@@ -314,8 +318,8 @@
                     <cabecalho-pagina titulo="Editar Expert"></cabecalho-pagina>
 
                     <div class="row">
-                        <div class="col-2"></div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-2 col-lg-3"></div>
+                        <div class="col-12 col-md-8 col-lg-6">
                             <form @submit.prevent="atualizarExpert">
                                 <div class="form-group">
                                     <input v-model="formulario.nome" type="text" class="form-control form-control-lg"
@@ -346,7 +350,7 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="col-2"></div>
+                        <div class="col-12 col-md-2 col-lg-3"></div>
                     </div>
                 </div>
             </div>
